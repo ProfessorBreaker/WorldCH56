@@ -19,6 +19,7 @@ class MapViewController: UIViewController {
             // Set it as *the* view of this view controller
             view = mapView
         
+        // Programmatic Constraints
         let segmentedControl
                     = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
             segmentedControl.backgroundColor = UIColor.systemBackground
@@ -53,6 +54,7 @@ class MapViewController: UIViewController {
         print("MapViewController loaded its view.")
     }
     
+    //Segmented Controls for MapView
     @objc func mapTypeChanged(_ segControl: UISegmentedControl) {
         switch segControl.selectedSegmentIndex {
         case 0:
