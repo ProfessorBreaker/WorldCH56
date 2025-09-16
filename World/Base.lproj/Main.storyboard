@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
-        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -72,11 +71,6 @@
         <scene sceneID="URz-rP-tXG">
             <objects>
                 <viewController id="2dl-RY-bcG" customClass="MapViewController" customModule="World" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="deP-dB-JP6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <standardMapConfiguration key="preferredConfiguration"/>
-                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="mappin.circle.fill" catalog="system" selectedImage="mappin.circle.fill" id="lNl-cL-Opp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCu-gV-FRx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,6 +83,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iPG-QS-VWu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3GW-i7-5HY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
